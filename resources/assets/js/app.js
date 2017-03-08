@@ -18,6 +18,10 @@ require('spark-bootstrap');
 
 require('./components/bootstrap');
 
+Spark.forms.register = {
+    phone_number: ''
+};
+
 var app = new Vue({
     mixins: [require('spark')]
 });

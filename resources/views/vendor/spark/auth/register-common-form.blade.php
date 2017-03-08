@@ -59,6 +59,19 @@
         </div>
     </div>
 
+    <!-- Phone Number -->
+    <div class="form-group" :class="{'has-error': registerForm.errors.has('phone_number')}">
+        <label class="col-md-4 control-label">Phone Number</label>
+
+        <div class="col-md-6">
+            <input type="tel" class="form-control" name="phone_number" v-model="registerForm.phone_number">
+
+            <span class="help-block" v-show="registerForm.errors.has('phone_number')">
+                @{{ registerForm.errors.get('phone_number') }}
+            </span>
+        </div>
+    </div>
+
     <!-- Password -->
     <div class="form-group" :class="{'has-error': registerForm.errors.has('password')}">
         <label class="col-md-4 control-label">Password</label>

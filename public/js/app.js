@@ -27671,8 +27671,12 @@ __webpack_require__(258);
 
 __webpack_require__(153);
 
+Spark.forms.register = {
+    phone: ''
+};
+
 var app = new Vue({
-  mixins: [__webpack_require__(259)]
+    mixins: [__webpack_require__(259)]
 });
 
 /***/ }),
