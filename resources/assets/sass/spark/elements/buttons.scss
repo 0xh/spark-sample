@@ -76,7 +76,7 @@
     }
 }
 
-.btn-primary {
+.btn-primary, .links button {
 	@include button-variant($color-orange);
 }
 
