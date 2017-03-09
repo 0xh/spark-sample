@@ -27672,7 +27672,7 @@ __webpack_require__(258);
 __webpack_require__(153);
 
 Spark.forms.register = {
-    phone: ''
+    phone_number: ''
 };
 
 var app = new Vue({
