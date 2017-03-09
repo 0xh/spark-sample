@@ -54,7 +54,7 @@
         }
 
         .links button {
-            background-color: #3097D1;
+            background-color: #F3592F;
             border: 0;
             border-radius: 4px;
             color: white;
