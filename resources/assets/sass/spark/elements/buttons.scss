@@ -14,6 +14,37 @@
     background-color: white;
 }
 
+// Normal Buttons
+@mixin button-variant($color, $text-color: #fff, $activeTextColor: #fff) {
+	color: $text-color;
+	background-color: $color;
+	border-color: $color;
+	
+	&:focus,
+	&.focus,
+	&:hover,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $activeTextColor;
+		background-color: $color;
+		box-shadow: none;
+	}
+	
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			border-color: $color;
+		}
+	}
+}
+
 // Outline Buttons
 @mixin button-outline-variant($color, $activeTextColor: #fff) {
     color: $color;
@@ -45,12 +76,16 @@
     }
 }
 
+.btn-primary {
+	@include button-variant($color-orange);
+}
+
 .btn-default-outline {
     @include button-outline-variant($btn-default-color);
 }
 
 .btn-primary-outline {
-    @include button-outline-variant($btn-primary-border);
+    @include button-outline-variant($color-orange);
 }
 
 .btn-success-outline {
